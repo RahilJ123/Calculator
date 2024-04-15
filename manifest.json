@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Calculator",
+  "version": "1.0",
+  "description": "A simple calculator web extension.",
+  "permissions": [],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "ICON1.jpg"
+  },
+  "icons": {
+    "16": "ICON1.jpg",
+    "48": "ICON1.jpg",
+    "128": "ICON1.jpg"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css", "popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "sandbox": {
+    "pages": ["index.html"]
+  }
+}
